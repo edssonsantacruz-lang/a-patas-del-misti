@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Patas del Misti | Premios naturales para perros</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="#inicio" class="logo">
+    <img src="logo.png" alt="Logo A Patas del Misti">
+    <span>A PATAS DEL MISTI</span>
+</a>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button id="carrito">
+            🛒 Carrito (<span id="contador">0</span>)
+        </button>
+    </header>
+
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-texto">
+                <p class="pequeno">🐶 PREMIOS NATURALES</p>
+
+                <h2>
+                    Para engreír<br>
+                    a tu mejor amigo
+                </h2>
+
+                <p>
+                    Patas de pollo deshidratadas,
+                    naturales y deliciosas para tu engreído.
+                </p>
+
+                <a href="#productos" class="boton">
+                    🐾 Ver productos
+                </a>
+            </div>
+
+         <div class="hero-imagen">
+             <img src="logo.png" alt="A Patas del Misti">
+        </div>
+
+        </section>
+
+
+        <section class="beneficios">
+
+            <div>
+                <strong>🌿 100%</strong>
+                <span>Natural</span>
+            </div>
+
+            <div>
+                <strong>🚫</strong>
+                <span>Sin químicos</span>
+            </div>
+
+            <div>
+                <strong>❤️</strong>
+                <span>Hecho con amor</span>
+            </div>
+
+            <div>
+                <strong>🇵🇪</strong>
+                <span>Hecho en Perú</span>
+            </div>
+
+        </section>
+
+
+        <section id="productos" class="productos">
+
+            <p class="pequeno">NUESTROS PRODUCTOS</p>
+
+            <h2>Elige el premio perfecto 🐶</h2>
+
+            <div class="productos-grid">
+
+
+                <article class="producto">
+
+                    <span class="etiqueta">PRUEBA</span>
+
+                    <div class="producto-imagen">
+                        🦴
+                    </div>
+
+                    <h3>Pack Pequeño</h3>
+
+                    <p>5 - 10 patas deshidratadas</p>
+
+                    <strong>S/ 12.00</strong>
+
+                    <button
+                        class="agregar"
+                        data-producto="Pack Pequeño"
+                        data-precio="12">
+                        🛒 Agregar al carrito
+                    </button>
+
+                </article>
+
+
+                <article class="producto destacado">
+
+                    <span class="etiqueta naranja">MÁS VENDIDO</span>
+
+                    <div class="producto-imagen">
+                        🐾
+                    </div>
+
+                    <h3>Pack Mediano</h3>
+
+                    <p>15 - 20 patas deshidratadas</p>
+
+                    <strong>S/ 22.00</strong>
+
+                    <button
+                        class="agregar"
+                        data-producto="Pack Mediano"
+                        data-precio="22">
+                        🛒 Agregar al carrito
+                    </button>
+
+                </article>
+
+
+                <article class="producto">
+
+                    <span class="etiqueta">MEJOR PRECIO</span>
+
+                    <div class="producto-imagen">
+                        🐕
+                    </div>
+
+                    <h3>Pack Grande</h3>
+
+                    <p>30 - 50 patas deshidratadas</p>
+
+                    <strong>S/ 40.00</strong>
+
+                    <button
+                        class="agregar"
+                        data-producto="Pack Grande"
+                        data-precio="40">
+                        🛒 Agregar al carrito
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section id="nosotros" class="nosotros">
+
+            <div>
+                <h2>Hechas con ingredientes simples y naturales 🌿</h2>
+
+                <p>
+                    En A Patas del Misti queremos ofrecer premios
+                    naturales para consentir a nuestros mejores amigos.
+                </p>
+
+                <p>
+                    Elaboradas en Arequipa, Perú.
+                </p>
+            </div>
+
+        </section>
+
+
+        <section id="contacto" class="contacto">
+
+            <h2>¿Quieres hacer un pedido?</h2>
+
+            <p>
+                Escríbenos y te ayudaremos con tu pedido.
+            </p>
+
+            <a
+                class="whatsapp"
+                href="https://wa.me/51999999999"
+                target="_blank">
+                💬 Pedir por WhatsApp
+            </a>
+
+        </section>
+
+    </main>
+<!-- =========================
+     VENTANA DEL CARRITO
+========================= -->
+
+<div id="modalCarrito" class="modal">
+
+    <div class="carrito-ventana">
+
+        <button id="cerrarCarrito" class="cerrar">
+            ✕
+        </button>
+
+        <h2>🛒 Tu carrito</h2>
+
+        <div id="listaCarrito">
+            <p class="carrito-vacio">
+                Tu carrito está vacío 🐾
+            </p>
+        </div>
+
+        <div class="carrito-total">
+            <span>Total:</span>
+            <strong>S/ <span id="totalCarrito">0.00</span></strong>
+        </div>
+
+        <div class="carrito-botones">
+
+            <button id="vaciarCarrito" class="btn-vaciar">
+                🗑️ Vaciar
+            </button>
+
+            <button id="pedidoWhatsApp" class="btn-whatsapp">
+                💬 Pedir por WhatsApp
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <footer>
+
+        <h2>🐾 A PATAS DEL MISTI</h2>
+
+        <p>
+            Premios naturales para engreír a tu mejor amigo.
+        </p>
+
+        <p>
+            © 2026 A Patas del Misti
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
