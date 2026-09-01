@@ -1,0 +1,1006 @@
+/* =========================
+   A PATAS DEL MISTI
+   ESTILOS PRINCIPALES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffaf4;
+    color: #4b2815;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #ffffff;
+    min-height: 80px;
+    padding: 15px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+header h1 {
+    font-size: 22px;
+    color: #6b3518;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4b2815;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ed6b16;
+}
+
+#carrito {
+    border: none;
+    background: #ed6b16;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 560px;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background:
+        radial-gradient(circle at 80% 30%, #ffe5c8 0%, transparent 35%),
+        #fff8ef;
+}
+
+.hero-texto {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pequeño {
+    color: #ed6b16;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1.05;
+    color: #512b18;
+    margin-bottom: 25px;
+}
+
+.hero-texto > p:not(.pequeño) {
+    font-size: 19px;
+    line-height: 1.6;
+    color: #76533d;
+    margin-bottom: 30px;
+}
+
+.boton {
+    display: inline-block;
+    background: #ed6b16;
+    color: white;
+    text-decoration: none;
+    padding: 16px 28px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 7px 18px rgba(237,107,22,0.25);
+    transition: 0.3s;
+}
+
+.boton:hover {
+    transform: translateY(-3px);
+    background: #d95708;
+}
+
+/* =========================
+   HERO ILUSTRACIÓN
+========================= */
+
+.hero-imagen {
+    width: 440px;
+    height: 440px;
+    background: transparent;
+    border-radius: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    overflow: visible;
+}
+
+.misti {
+    position: absolute;
+    top: 35px;
+    font-size: 150px;
+    opacity: 0.8;
+}
+
+.perro {
+    position: absolute;
+    bottom: 60px;
+    font-size: 150px;
+    z-index: 2;
+}
+
+.patas {
+    position: absolute;
+    bottom: 30px;
+    font-size: 38px;
+    z-index: 3;
+}
+
+/* =========================
+   BENEFICIOS
+========================= */
+
+.beneficios {
+    width: 90%;
+    margin: -30px auto 50px;
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+    position: relative;
+    z-index: 5;
+}
+
+.beneficios div {
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid #eadfd5;
+}
+
+.beneficios div:last-child {
+    border-right: none;
+}
+
+.beneficios strong,
+.beneficios span {
+    display: block;
+}
+
+.beneficios strong {
+    font-size: 22px;
+    color: #ed6b16;
+    margin-bottom: 7px;
+}
+
+.beneficios span {
+    color: #654735;
+}
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+.productos {
+    padding: 70px 7%;
+    text-align: center;
+}
+
+.productos h2 {
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.producto {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(70,40,20,0.08);
+    transition: 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(70,40,20,0.14);
+}
+
+.producto.destacado {
+    border: 3px solid #ed6b16;
+}
+
+.etiqueta {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background: #4d8a35;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.etiqueta.naranja {
+    background: #ed6b16;
+}
+
+.producto-imagen {
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 110px;
+    background: #fff8ef;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.producto h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.producto p {
+    color: #795b47;
+    margin-bottom: 15px;
+}
+
+.producto > strong {
+    display: block;
+    font-size: 27px;
+    color: #c84f0a;
+    margin-bottom: 20px;
+}
+
+.agregar {
+    width: 100%;
+    border: 2px solid #ed6b16;
+    background: white;
+    color: #d75d0c;
+    padding: 13px;
+    border-radius: 9px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.agregar:hover {
+    background: #ed6b16;
+    color: white;
+}
+
+/* =========================
+   NOSOTROS
+========================= */
+
+.nosotros {
+    margin-top: 30px;
+    padding: 70px 10%;
+    background: #fff0df;
+    text-align: center;
+}
+
+.nosotros div {
+    max-width: 850px;
+    margin: auto;
+}
+
+.nosotros h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.nosotros p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #76533d;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contacto h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contacto p {
+    color: #76533d;
+    margin-bottom: 25px;
+}
+
+.whatsapp {
+    display: inline-block;
+    text-decoration: none;
+    background: #25d366;
+    color: white;
+    padding: 16px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #512b18;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+    color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    font-size: 24px;
+}
+
+footer p {
+    margin-top: 10px;
+    opacity: 0.85;
+    color: #ffffff !important;
+}
+
+/* =========================
+   RESPONSIVE - CELULAR
+========================= */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .hero-imagen {
+        width: 330px;
+        height: 300px;
+    }
+
+    .misti {
+        font-size: 110px;
+    }
+
+    .perro {
+        font-size: 110px;
+    }
+
+    .beneficios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .beneficios div:nth-child(2) {
+        border-right: none;
+    }
+
+    .productos-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    #carrito {
+        padding: 9px 13px;
+    }
+
+    nav {
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .hero-imagen {
+        width: 280px;
+        height: 260px;
+    }
+
+    .beneficios {
+        width: 94%;
+        padding: 15px;
+    }
+
+    .beneficios div {
+        border-right: none;
+        border-bottom: 1px solid #eadfd5;
+    }
+
+    .productos {
+        padding: 50px 5%;
+    }
+
+    .productos h2 {
+        font-size: 30px;
+    }
+
+    }
+    /* =========================
+   CARRITO - VENTANA
+========================= */
+
+.modal {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(45, 25, 15, 0.60);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    z-index: 9999;
+}
+
+.modal.activo {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* VENTANA */
+
+.carrito-ventana {
+    background: #fffaf4;
+
+    width: 100%;
+    max-width: 650px;
+
+    max-height: 85vh;
+    overflow-y: auto;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    position: relative;
+
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.30);
+
+    transform: translateY(30px);
+
+    transition: 0.3s;
+}
+
+.modal.activo .carrito-ventana {
+    transform: translateY(0);
+}
+
+
+/* BOTÓN CERRAR */
+
+.cerrar {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+
+    background: #f4e5d6;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    color: #5b3019;
+}
+
+.cerrar:hover {
+    background: #ed6b16;
+    color: white;
+}
+
+
+/* TÍTULO */
+
+.carrito-ventana h2 {
+    color: #512b18;
+
+    font-size: 30px;
+
+    margin-bottom: 25px;
+}
+
+
+/* PRODUCTOS */
+
+.item-carrito {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    display: grid;
+
+    grid-template-columns: 1fr auto auto auto;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.item-info strong {
+    display: block;
+
+    color: #512b18;
+
+    margin-bottom: 5px;
+}
+
+.item-info span {
+    color: #8a6b57;
+
+    font-size: 13px;
+}
+
+
+/* CANTIDAD */
+
+.cantidad {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.cantidad button {
+    width: 30px;
+    height: 30px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #ed6b16;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.cantidad button:hover {
+    background: #c84f0a;
+}
+
+
+/* SUBTOTAL */
+
+.subtotal {
+    color: #c84f0a;
+}
+
+
+/* ELIMINAR */
+
+.eliminar {
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+
+/* CARRITO VACÍO */
+
+.carrito-vacio {
+    text-align: center;
+
+    padding: 40px 10px;
+
+    color: #806653;
+
+    font-size: 18px;
+}
+
+
+/* TOTAL */
+
+.carrito-total {
+    border-top: 2px solid #eadfd5;
+
+    margin-top: 20px;
+
+    padding-top: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 20px;
+}
+
+.carrito-total strong {
+    color: #c84f0a;
+
+    font-size: 26px;
+}
+
+
+/* BOTONES */
+
+.carrito-botones {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.carrito-botones button {
+    flex: 1;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    border: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn-vaciar {
+    background: #f0ded0;
+
+    color: #633b25;
+}
+
+.btn-whatsapp {
+    background: #25d366;
+
+    color: white;
+}
+
+.btn-whatsapp:hover {
+    background: #1ebe5d;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .carrito-ventana {
+        padding: 22px;
+    }
+
+    .item-carrito {
+        grid-template-columns: 1fr auto;
+    }
+
+    .subtotal {
+        grid-column: 1;
+    }
+
+    .eliminar {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .carrito-botones {
+        flex-direction: column;
+    }
+}
+
+/* =========================
+   LOGO DEL ENCABEZADO
+========================= */
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+header .logo img {
+    width: 65px;
+    height: 65px;
+    min-width: 65px;
+    max-width: 65px;
+    object-fit: contain;
+    display: block;
+}
+
+header .logo span {
+    color: #512b18;
+    font-size: 22px;
+    font-weight: 800;
+}
+/* LOGO GRANDE DE LA PORTADA */
+
+.hero-imagen img {
+    width: 390px;
+    height: 390px;
+    object-fit: contain;
+    display: block;
+}
+/* TAMAÑO DE LAS IMÁGENES DE PRODUCTOS */
+.producto-imagen {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.producto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+/* AJUSTE FINAL DE LAS FOTOS */
+.producto-imagen img {
+    width: 100% !important;
+    height: 180px !important;
+    max-width: 100% !important;
+    max-height: 180px !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin: auto !important;
+}
+.productos h2 img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+/* ================================
+   COLORES ESTILO TECKEL 🐶🤎
+   ================================ */
+
+:root {
+    --chocolate: #542914;
+    --marron: #7A3F1D;
+    --caramelo: #B96F32;
+    --terracota: #C8541A;
+    --crema: #FFF7ED;
+    --beige: #F3E2CC;
+}
+
+/* Fondo general */
+body {
+    background: var(--crema);
+    color: var(--chocolate);
+}
+
+/* Títulos */
+h1,
+h2,
+h3 {
+    color: var(--chocolate);
+}
+
+/* Encabezado */
+header {
+    background: #fffaf3;
+}
+
+/* Navegación */
+nav a {
+    color: var(--chocolate);
+}
+
+nav a:hover {
+    color: var(--caramelo);
+}
+
+/* Botones */
+button,
+.btn {
+    background: var(--marron);
+    color: white;
+}
+
+button:hover,
+.btn:hover {
+    background: var(--caramelo);
+}
+
+/* Precios */
+.producto strong {
+    color: var(--terracota);
+}
+
+/* Tarjetas de productos */
+.producto {
+    background: #fffaf3;
+    border-color: var(--beige);
+}
+
+/* Sección de productos */
+.productos {
+    background: var(--crema);
+}
+/* 🐶 ESTILO TECKEL - AJUSTE FINAL */
+
+body {
+    background: #FFF7ED !important;
+}
+
+/* Botones principales */
+button,
+.btn,
+.agregar {
+    background: #6B3518 !important;
+    color: #FFFFFF !important;
+    border-color: #6B3518 !important;
+}
+
+/* Botones al pasar el mouse */
+button:hover,
+.btn:hover,
+.agregar:hover {
+    background: #A85D2A !important;
+    border-color: #A85D2A !important;
+}
+
+/* Botón de carrito */
+#carrito {
+    background: #6B3518 !important;
+    color: white !important;
+}
+
+/* Precios */
+.producto strong {
+    color: #A84F1A !important;
+}
+
+/* Títulos */
+h1,
+h2,
+h3 {
+    color: #542914 !important;
+}
+
+/* Enlaces del menú */
+header nav a {
+    color: #542914 !important;
+}
+
+header nav a:hover {
+    color: #A85D2A !important;
+}
+/* BOTÓN VER PRODUCTOS - ESTILO TECKEL */
+.boton {
+    background: #6B3518 !important;
+    color: #FFFFFF !important;
+    border-color: #6B3518 !important;
+}
+
+.boton:hover {
+    background: #A85D2A !important;
+    border-color: #A85D2A !important;
+}
+/* LOGO SIN ASPECTO DE CUADRADO */
+.hero-image img {
+    mix-blend-mode: multiply;
+}
+/* QUITAR VISUALMENTE EL FONDO BLANCO DEL LOGO */
+.hero-imagen img {
+    mix-blend-mode: multiply;
+}
+.pequeño img {
+    width: 31px;
+    height: 31px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.hecho-por {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.hecho-por strong {
+    color: #E6B17A;
+    font-weight: bold;
+}
